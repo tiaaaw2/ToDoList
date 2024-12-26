@@ -1,100 +1,105 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
-
-.container {
-    width: 100%;
-    min-height: 100vh; 
-    background: #F5EFE7;
-    padding: 10px;
+body {
+  background: #f5efe7;
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-
 
 .todo-app {
-    width: 100%;
-    max-width: 540px; 
-    background: #ffffff; 
-    margin: 100px auto; 
-    padding: 40px 30px 70px;
-    border-radius: 10px; 
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
-.todo-app h2 {
-    color: #3E5879; 
-    text-align: center;
-    margin-bottom: 20px; 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #3e5879;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+h2 img {
+  width: 30px; /* Adjust logo size */
+  height: 30px;
+  margin-left: 10px; /* Add some space between text and logo */
+}
 
 .row {
-    display: flex;
-    align-items: center; 
-    justify-content: space-between; 
-    background: #edeef0; 
-    border-radius: 30px; 
-    padding-left: 20px;
-    margin-bottom: 25px;
+  display: flex;
+  margin-bottom: 20px;
 }
-
 
 input {
-    flex: 1; 
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 14px; 
-    padding: 10px;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  height: 40px; /* Ensure consistent height */
 }
-
 
 button {
-    border: none;
-    outline: none;
-    padding: 16px 50px;
-    background: #3E5879; 
-    color: white;
-    font-size: 16px;
-    cursor: pointer; 
-    border-radius: 40px;
+  padding: 10px 20px;
+  background: #3e5879;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px; /* Match button height to input field */
 }
 
+button:hover {
+  background: #2d4260;
+}
 
 ul {
-    list-style: none; 
-    padding-left: 0; 
+  list-style: none;
+  padding: 0;
 }
-
 
 ul li {
-    display: flex; 
-    align-items: center; 
-    padding: 12px 8px;
-    background-color: #f1f1f1; 
-    margin-bottom: 10px;
-    border-radius: 8px;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-ul li span {
-    margin-left: auto; 
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    color: #555;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    cursor: pointer; 
-
-}
-ul li span:hover {
-    background: #edeef0; 
-    border-radius: 50%;
+ul li .delete-btn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
+ul li .delete-btn:hover {
+  background: #e63636;
+}
+
+ul li .delete-btn:active {
+  background: #cc2d2d;
+}

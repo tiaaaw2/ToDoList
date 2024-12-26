@@ -2,7 +2,6 @@ var addbtn = document.getElementById('add-btn');
 var input = document.getElementById('input');
 var liscont =  document.getElementById('list-container');
 
-
 addbtn.addEventListener('click', function(){
     if (input.value != "") {
         var li = document.createElement('li');
@@ -15,8 +14,4 @@ addbtn.addEventListener('click', function(){
     }
 })
 
-// function deleteTask() {
-    
-
-// }
 
