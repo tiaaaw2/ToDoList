@@ -16,12 +16,16 @@ body {
 }
 
 .todo-app {
-  width: 100%;
-  max-width: 500px;
+  /* kotak */
+  width: 500px; 
+  height: 400px; 
   background: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 h2 {
@@ -43,6 +47,7 @@ h2 img {
 .row {
   display: flex;
   margin-bottom: 20px;
+  width: 100%; /* Ensure row doesn't overflow */
 }
 
 input {
@@ -52,7 +57,10 @@ input {
   border-radius: 5px;
   margin-right: 10px;
   font-size: 16px;
-  height: 40px; /* Ensure consistent height */
+  height: 40px; /* Fixed height for input field */
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent input from expanding */
+  white-space: nowrap; /* Prevent wrapping in the input box */
 }
 
 button {
@@ -72,6 +80,9 @@ button:hover {
 ul {
   list-style: none;
   padding: 0;
+  margin-top: 20px; /* Space between input and list */
+  height: 350px; /* Fixed height for the list */
+  overflow-y: auto; /* Allow scrolling for list items */
 }
 
 ul li {
