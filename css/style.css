@@ -14,13 +14,17 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .todo-app {
   /* kotak */
-  width: 500px; 
-  height: 400px; 
+  width: 400px; 
+  height: 200px; 
   background: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -39,15 +43,15 @@ h2 {
 }
 
 h2 img {
-  width: 30px; /* Adjust logo size */
+  width: 30px; 
   height: 30px;
-  margin-left: 10px; /* Add some space between text and logo */
+  margin-left: 10px; 
 }
 
 .row {
   display: flex;
   margin-bottom: 20px;
-  width: 100%; /* Ensure row doesn't overflow */
+  width: 100%; 
 }
 
 input {
@@ -57,10 +61,10 @@ input {
   border-radius: 5px;
   margin-right: 10px;
   font-size: 16px;
-  height: 40px; /* Fixed height for input field */
+  height: 40px; 
   box-sizing: border-box;
-  overflow: hidden; /* Prevent input from expanding */
-  white-space: nowrap; /* Prevent wrapping in the input box */
+  overflow: hidden; 
+  white-space: nowrap; 
 }
 
 button {
@@ -70,7 +74,7 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  height: 40px; /* Match button height to input field */
+  height: 40px; 
 }
 
 button:hover {
@@ -80,9 +84,9 @@ button:hover {
 ul {
   list-style: none;
   padding: 0;
-  margin-top: 20px; /* Space between input and list */
-  height: 350px; /* Fixed height for the list */
-  overflow-y: auto; /* Allow scrolling for list items */
+  margin-top: 20px; 
+  height: 350px; 
+  overflow-y: auto; 
 }
 
 ul li {
